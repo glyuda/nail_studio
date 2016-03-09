@@ -1,5 +1,11 @@
 @font-face {
   font-family: 'MTCORSVA';
-  src: url('./MTCORSVA.eot');
-  src: local('MTCORSVA'), url('./MTCORSVA.woff') format('woff'), url('./MTCORSVA.ttf') format('truetype');
+  src: url('./fonts/MTCORSVA.eot');
+  src: local('MTCORSVA'), url('./fonts/MTCORSVA.woff') format('woff'), url('./fonts/MTCORSVA.ttf') format('truetype');
+}
+
+
+.pink_font {
+  color: deeppink;
+  font-weight: bold;
 }
