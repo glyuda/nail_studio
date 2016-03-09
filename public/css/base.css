@@ -2,5 +2,12 @@
   font-family: 'MTCORSVA';
   src: url("./MTCORSVA.eot");
   src: local("MTCORSVA"), url("./MTCORSVA.woff") format("woff"), url("./MTCORSVA.ttf") format("truetype"); }
+
 .page_header h1 {
-  font-family: 'MTCORSVA'; }
+  font-family: 'MTCORSVA';
+  color: blue; }
+
+@font-face {
+  font-family: 'MTCORSVA';
+  src: url("./MTCORSVA.eot");
+  src: local("MTCORSVA"), url("./MTCORSVA.woff") format("woff"), url("./MTCORSVA.ttf") format("truetype"); }
