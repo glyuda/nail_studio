@@ -9,7 +9,7 @@
         src: {
             html: 'source/*.html',
             css: 'source/sass/**/*.scss',
-            css_fonts: 'source/css/fonts/*.*',
+            css_vendors: 'source/css/**/*.*',
             img: 'source/images/**/*.*',
             js: 'source/js/**/*.js'
 
@@ -17,13 +17,19 @@
         dest: {
             html: 'public',
             css: 'public/css',
-            css_fonts: 'public/css/fonts',
             images: 'public/images',
             js: 'public/js'
         }
     };
 //all tasks we can do
     gulp.task('startWork', function() {
+    //first load resources
+        gulp.run('htmlMove');
+        gulp.run('cssCreate');
+        gulp.run('cssVendorsMove');
+        gulp.run('jsMove');
+        gulp.run('imgMove');
+
     //all watchers
         gulp.watch(paths.src.html, function() {
             gulp.run('htmlMove');
@@ -33,18 +39,17 @@
             gulp.run('cssCreate');
         });
 
-        gulp.watch(paths.src.css_fonts, function() {
-            gulp.run('fontsMove');
+        gulp.watch(paths.src.css_vendors, function() {
+            gulp.run('cssVendorsMove');
         })
 
         gulp.watch(paths.src.js, function() {
-            gulp.run('jsMove')
+            gulp.run('jsMove');
         });
 
         gulp.watch(paths.src.img, function() {
-            gulp.run('imgMove')
+            gulp.run('imgMove');
         });
-
     })
 
     gulp.task('htmlMove', function() {
@@ -59,8 +64,8 @@
             //.pipe(plugins.livereload());
     });
 
-    gulp.task('fontsMove', function() {
-        gulp.src(paths.src.css_fonts)
+    gulp.task('cssVendorsMove', function() {
+        gulp.src(paths.src.css_vendors)
             .pipe(gulp.dest(paths.dest.css))
     });
 

@@ -4,8 +4,93 @@
   src: local("MTCORSVA"), url("./fonts/MTCORSVA.woff") format("woff"), url("./fonts/MTCORSVA.ttf") format("truetype"); }
 
 .pink_font {
-  color: deeppink;
+  color: #e2098d;
   font-weight: bold; }
 
 .page_header h1 {
   font-family: 'MTCORSVA'; }
+
+header {
+  color: #fff;
+  padding-bottom: 20px; }
+  header h1 {
+    margin: 0;
+    padding: 30px 0 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 84px;
+    line-height: 1.2; }
+  header p {
+    padding: 10px 0 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 36px;
+    line-height: 1.4; }
+
+.main_menu .navbar-default {
+  border: none;
+  background: rgba(255, 255, 255, 0.8); }
+
+.main_menu .nav > li > a {
+  padding: 35px; }
+
+.main_menu .navbar-nav > li > a {
+  line-height: normal;
+  color: #777; }
+
+.main_menu .navbar-nav {
+  display: table;
+  float: none;
+  margin: 0 auto;
+  table-layout: fixed;
+  font-size: 24px; }
+
+.box {
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  overflow: hidden;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.9); }
+
+.img-responsive {
+  width: 100%; }
+
+.img-border {
+  float: none;
+  margin: 0 auto 0;
+  border: #999999 solid 1px; }
+
+.brand-before {
+  color: #000;
+  font-size: 22px; }
+
+.brand-name {
+  font-family: 'MTCORSVA';
+  font-size: 48px; }
+
+.intro-text {
+  padding-bottom: 30px; }
+
+.studio_description {
+  overflow: hidden;
+  display: table; }
+  .studio_description img {
+    display: table-cell;
+    margin-right: 20px; }
+  .studio_description .text {
+    min-height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 22px; }
+
+footer {
+  background: rgba(255, 255, 255, 0.9); }
+  footer p {
+    margin: 0;
+    padding: 30px 0; }
+
+.wrapper {
+  margin: 0;
+  background: #494848 url("../images/backgrounds/main_bg.png") 100% 100% no-repeat;
+  background-size: 100% 100%; }
