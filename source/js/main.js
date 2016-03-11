@@ -1,4 +1,3 @@
-/**
- * Created by lyuda on 09.03.2016.
- */
-var i = 2;
+$('.carousel').carousel({
+    interval: 5000 //changes the speed
+});

@@ -3,10 +3,6 @@
   src: url("./fonts/MTCORSVA.eot");
   src: local("MTCORSVA"), url("./fonts/MTCORSVA.woff") format("woff"), url("./fonts/MTCORSVA.ttf") format("truetype"); }
 
-.pink_font {
-  color: #e2098d;
-  font-weight: bold; }
-
 .page_header h1 {
   font-family: 'MTCORSVA'; }
 
@@ -61,6 +57,9 @@ header {
   table-layout: fixed;
   font-size: 24px; }
 
+.pink_font {
+  color: #e2098d; }
+
 .box {
   margin-bottom: 20px;
   padding: 30px 15px;
@@ -88,7 +87,6 @@ header {
   padding-bottom: 30px; }
 
 .studio_description {
-  overflow: hidden;
   display: table; }
   .studio_description img {
     display: table-cell;
@@ -105,6 +103,23 @@ header {
     width: 50%;
     margin: 0;
     float: left; }
+
+.error_404 {
+  overflow: hidden; }
+  .error_404 .error_description {
+    display: block;
+    float: right;
+    padding: 50px 25px;
+    text-align: right; }
+    .error_404 .error_description h3 {
+      font-family: 'MTCORSVA';
+      font-size: 48px;
+      padding-bottom: 20px; }
+    .error_404 .error_description p {
+      font-size: 18px; }
+  .error_404 img {
+    display: block;
+    float: right; }
 
 footer {
   background: rgba(255, 255, 255, 0.9); }

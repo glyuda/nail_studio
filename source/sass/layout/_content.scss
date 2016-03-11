@@ -1,3 +1,7 @@
+.pink_font {
+  color: $pink_color;
+}
+
 .box {
   margin-bottom: 20px;
   padding: 30px 15px;
@@ -33,7 +37,6 @@
 }
 
 .studio_description {
-  overflow: hidden;
   display: table;
 
   img {
@@ -57,5 +60,33 @@
     width: 50%;
     margin: 0;
     float: left;
+  }
+}
+
+.error_404 {
+  overflow: hidden;
+
+  .error_description {
+    display: block;
+    float: right;
+    padding: 50px 25px;
+
+    text-align: right;
+
+    h3{
+      font-family: 'MTCORSVA';
+      font-size: 48px;
+
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  img {
+    display: block;
+    float: right;
   }
 }
