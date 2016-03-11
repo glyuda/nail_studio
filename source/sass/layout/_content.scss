@@ -49,3 +49,13 @@
     font-size: 22px;
   }
 }
+
+.services_list {
+  overflow: hidden;
+
+  li {
+    width: 50%;
+    margin: 0;
+    float: left;
+  }
+}

@@ -99,6 +99,13 @@ header {
     vertical-align: middle;
     font-size: 22px; }
 
+.services_list {
+  overflow: hidden; }
+  .services_list li {
+    width: 50%;
+    margin: 0;
+    float: left; }
+
 footer {
   background: rgba(255, 255, 255, 0.9); }
   footer p {
