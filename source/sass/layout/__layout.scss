@@ -1,11 +1,6 @@
 @import "colors";
+@import "general";
 @import "header";
 @import "menu";
 @import "content";
 @import "footer";
-
-.wrapper {
-  margin: 0;
-  background: #494848 url('../images/backgrounds/main_bg.png') 100% 100% no-repeat;
-  background-size: 100% 100%;
-}
