@@ -11,6 +11,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.2.0",
+    "hapi": "^13.2.1",
+    "inert": "^3.2.0"
   }
 }
